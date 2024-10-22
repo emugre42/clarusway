@@ -14,10 +14,10 @@ total_list = []
 for x, y in scores:
     total_list.append((x+y))
 
-total_list
+sum_scores = 50 * 3 # since the minimum average is 50 the sum of scores must be 50 times the number of assessments
 
-total_scores = [(150 - i) for i in total_list]
-total_scores
+scores_needed = [(sum_scores - i) for i in total_list]
+scores_needed
 
 total_scores = [i if i > 0 else 0 for i in total_scores ]
 total_scores
