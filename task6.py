@@ -14,8 +14,6 @@ total_list = []
 for x, y in scores:
     total_list.append((x+y))
 
-total_list
-
 sum_scores = 50 * 3 # since the minimum average is 50 the sum of scores must be 50 times the number of assessments
 
 scores_needed = [(sum_scores - i) for i in total_list]
@@ -26,4 +24,4 @@ scores_needed
 
 final_scores_needed = {student["name"]: result for student, result in zip(students, scores_needed)}
 
-final_scores_needed
+print(final_scores_needed)
